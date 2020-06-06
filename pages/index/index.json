@@ -1,0 +1,10 @@
+{
+  "usingComponents": {
+    "van-search": "/vant/lib/search/index",
+      "van-grid": "/vant/lib/grid/index",
+      "van-grid-item": "/vant/lib/grid-item/index"
+  },
+    "navigationBarTitleText": "推荐",
+    "navigationBarBackgroundColor":"#000000",
+    "navigationBarTextStyle": "white"
+}

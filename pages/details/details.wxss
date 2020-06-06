@@ -1,0 +1,140 @@
+.background{
+ width: 100%;
+}
+.book{
+  display: flex;
+  justify-content: space-between;
+  padding: 4%;
+}
+.book image{
+  width: 40%;
+  height: 350rpx;
+}
+.details{
+  width: 55%;
+  padding: 2% 0;
+}
+.details view:first-child{
+  font-size: 40rpx;
+}
+.details view:nth-child(2){
+  padding: 3% 0;
+  color: #A9A9A9
+}
+.details view:nth-child(3){
+  color: red;
+  font-size: 30rpx;
+}
+.space{
+background-color: #f4f4f4;
+height: 20rpx;
+}
+.introduction{
+  padding: 4%;
+}
+.introduction view:first-child{
+  font-size: 35rpx;
+  font-weight: bold;
+  padding:  0 0 3% 0;
+  border-bottom: 1rpx solid #f4f4f4; 
+}
+.introduction view:last-child{
+  height:140rpx;
+  overflow:hidden;
+  text-align: justify;
+  text-indent: 1em;
+ padding: 2% 0;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: 3;
+    -webkit-box-orient: vertical;
+  }
+  .chapters{
+    padding: 4% 4% 20% 4%;
+  }
+  .title{
+    display: flex;
+    justify-content: space-between;
+    margin:  0 0 2% 0;
+  }
+    .num{
+      font-size: 35rpx;
+  }
+  .order{
+    width: 25%;
+  }
+  .order view{
+   display:  inline-block;
+   padding:  0 5%;
+  }
+  .chapter{
+    padding: 2% 0;
+    border-top: 1rpx solid #f4f4f4; 
+  }
+
+.button{
+  margin: 6% 0;
+  padding: 2%;
+  background-color:  red;
+  text-align: center;
+  border-radius: 10px;
+  width: 20%;
+  color: #f4f4f4;
+}
+
+.video_back{
+  text-align: center;
+  padding: 10% 25% 0 25%;
+}
+.video_back image{
+  height: 450rpx;
+  width: 100%;
+}
+.time{
+  display: flex;
+  justify-content: space-evenly;
+  padding: 10% 0;
+}
+.time view{
+  border:  1px solid burlywood;
+  padding: 2%;
+  text-align: center;
+  border-radius: 10px;
+  width: 40%;
+}
+.icon{
+  display: flex;
+  justify-content: space-evenly;
+  padding: 5% 0;
+  align-items: center;
+}
+.forward{
+  width: 50rpx;
+  height: 50rpx;
+}
+.top{
+    width: 80rpx;
+  height: 80rpx;
+}
+.play{
+   width: 120rpx;
+  height: 120rpx;
+}
+.bottom{
+  display: flex;
+  justify-content: space-around;
+  bottom:  0;
+  position: fixed;
+  width: 100%;
+  background-color: #707070;
+  padding: 2% 0;
+}
+.bottom view{
+  width: 40%;
+  padding: 2% 0;
+  text-align: center;
+  background-color: #1296db;
+  border-radius: 10px; 
+  color: white;
+}
+

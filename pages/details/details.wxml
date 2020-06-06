@@ -1,0 +1,63 @@
+<view class="background">
+  <view class="book">
+    <image src="{{details.book_img}}"></image>
+    <view class="details">
+      <view>
+        {{details.book_name}}
+      </view>
+      <view>
+        分类：{{details.classification}}
+      </view>
+      <view>
+        作者：{{details.author}}
+      </view>
+      <view class="button" bindtap="showPopup">
+        听书
+      </view>
+    </view>
+  </view>
+  <view class="space"></view>
+  <view class="introduction">
+    <view>简介</view>
+    <view>
+      {{details.book_introduce}}
+    </view>
+  </view>
+  <view class="space"></view>
+  <view class="chapters">
+    <view class="title">
+      <view class="num">共{{details.novel.length}}章节</view>
+      <view class="order">
+        <view bindtap="just">升序</view>
+        <view bindtap="back">倒序</view>
+      </view>
+    </view>
+    <view class="chapter" wx:for="{{novel}}" wx:key="details">
+      <view bindtap="content" data-chapter="{{item.chapter}}" data-book_id='{{item.book_id}}'>第{{item.chapter}}章
+        <text>{{item.chapter_name}}</text>
+      </view>
+    </view>
+  </view>
+   <view class="bottom">
+   <view>加入书架</view>
+   <view bindtap="read">{{read}}</view>
+   </view>
+  <!-- 听书弹出层 -->
+  <van-popup show="{{ show }}" closeable position="bottom" custom-style="height: 80%" bind:close="onClose">
+    <view class="video_back">
+      <image src="{{details.book_img}}"></image>
+      <view class="time">
+        <view>{{progressText}}</view>
+        <view>{{durationText}}</view>
+      </view>
+      </view>
+      <slider value="{{progress}}" bindchange="sliderChange" block-size="12" block-color="red" min="0" max="{{duration}}"></slider>
+      <view class="icon">
+        <image bindtap="backoff" class="forward" src="/image/hou.png"></image>
+        <image class="top" bindtap="lastMusic" src="/image/top.png"></image>
+        <image class="play" bindtap="playOrpause" src='{{playStatus?"/image/bo.png":"/image/zan.png"}}'></image>
+        <image class="top" bindtap="nextMusic" src="/image/bottom.png"></image>
+        <image bindtap="fast" class="forward" src="/image/qian.png"></image>
+      </view>
+  </van-popup>
+  </view>

@@ -1,0 +1,10 @@
+<view class="back">
+<view class="title">第{{content.chapter}}章  {{content.chapter_name}}</view>
+<view class="content">{{content.content}}</view>
+<view class="button">
+<view bindtap="top">上一章</view>
+<view bindtap="catalog">目录</view>
+<view bindtap="bottom">下一章</view>
+</view>
+</view>
+

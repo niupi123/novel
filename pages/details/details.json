@@ -1,0 +1,8 @@
+{
+  "usingComponents": {
+    "van-popup": "/vant/lib/popup/index"
+  },
+      "navigationBarTitleText": "书籍详情",
+      "navigationBarBackgroundColor": "#000000",
+      "navigationBarTextStyle": "white"
+}

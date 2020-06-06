@@ -1,0 +1,19 @@
+.back{
+  padding: 4% 3%;
+  background-color: #f4f4f4;
+}
+.title{
+  text-align: center;
+  padding: 3% 0;
+  font-size: 36rpx;
+}
+.content{
+  font-size: 32rpx;
+  text-align: justify;
+  line-height: 30px;
+}
+.button{
+  display: flex;
+  justify-content: space-around;
+  padding: 3% 0;
+}

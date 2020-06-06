@@ -1,0 +1,25 @@
+<view class="back">
+  <van-search placeholder="书名|作者|主播" />
+  <swiper indicator-dots="{{true}}" autoplay="{{true}}" interval="{{4000}}" duration="{{500}}" circular="{{true}}">
+    <block wx:for="{{background}}" wx:key="background">
+      <swiper-item>
+        <image src="{{ item }}"></image>
+      </swiper-item>
+    </block>
+  </swiper>
+  <van-grid column-num="5">
+    <van-grid-item icon="{{item.i}}" text="{{item.title}}" wx:for="{{ icon }}" wx:key="icon" />
+  </van-grid>
+
+  <view class="book" wx:for="{{book}}" wx:key="book" bindtap="details" wx:index="index" data-id="{{item.id}}">
+    <image src="{{item.book_img}}"></image>
+    <view class="book_name">
+      <view>
+        {{item.book_name}}
+      </view>
+      <view>
+        {{item.book_introduce}}
+      </view>
+    </view>
+  </view>
+</view>
